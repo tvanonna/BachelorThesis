@@ -1,0 +1,1 @@
+This data was used for the final Hamiltonian graph, but not the graph showing the evolution of the Hamiltonian value over time.

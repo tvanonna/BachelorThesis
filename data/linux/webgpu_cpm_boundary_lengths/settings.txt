@@ -1,0 +1,14 @@
+{
+  width: 1024,
+  height: 1024,
+  ncells: 20000,
+  workgroupSize: 8,
+  mcsPerIteration: 200,
+  mcsTotal: 10000,
+  seed: 10,
+  temperature: 10,
+  coalescing: false,
+  benchmarking: true
+}
+
+boundary lengths were measured using these settings!

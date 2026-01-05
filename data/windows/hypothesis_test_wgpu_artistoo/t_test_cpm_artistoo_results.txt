@@ -1,0 +1,10 @@
+Windows CPM WebGPU vs. Artistoo Comparison
+size: 512.0, test: T-test, t-statistic: -673.7195059554347, p-value: 2.2586158726396096e-39, equal variance: True, reject null hypothesis: True
+size: 768.0, test: T-test, t-statistic: -362.4642693024644, p-value: 8.514467693334958e-35, equal variance: True, reject null hypothesis: True
+size: 1024.0, test: T-test, t-statistic: -366.189219031364, p-value: 7.156170281965788e-35, equal variance: True, reject null hypothesis: True
+size: 1536.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 2048.0, test: T-test, t-statistic: -275.2638854286953, p-value: 9.153703835402222e-33, equal variance: True, reject null hypothesis: True
+size: 2671.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 3072.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 3584.0, test: T-test, t-statistic: -466.28792447488985, p-value: 1.1768581658925023e-36, equal variance: True, reject null hypothesis: True
+size: 4096.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True

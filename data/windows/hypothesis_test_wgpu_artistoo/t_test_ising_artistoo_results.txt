@@ -1,0 +1,9 @@
+Windows Ising Model WebGPU vs. Artistoo Comparison
+size: 768.0, test: T-test, t-statistic: -99.49645194136708, p-value: 2.9470591681178633e-25, equal variance: True, reject null hypothesis: True
+size: 1024.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 1536.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 2048.0, test: T-test, t-statistic: -217.59023963499627, p-value: 4.977290042225404e-31, equal variance: True, reject null hypothesis: True
+size: 2671.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 3072.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 3584.0, test: Mann-Whitney U-test, U-statistic: 0.0, p-value: 1.082508822446903e-05, reject null hypothesis: True
+size: 4096.0, test: T-test, t-statistic: -50.9474992064667, p-value: 1.9538786471185086e-19, equal variance: True, reject null hypothesis: True

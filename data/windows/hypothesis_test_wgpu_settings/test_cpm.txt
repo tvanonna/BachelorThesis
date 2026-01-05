@@ -1,0 +1,90 @@
+if an index of the shown results[i][j] is true, it means that data[i] is significantly smaller than data[j].
+size: 512.0, test: Kruskal-Wallis, statistic: 1.8717073170731737, p-value: 0.5994562876303653, reject null hypothesis: False
+
+size: 768.0, test: ANOVA, statistic: 4.674997149772579, p-value: 0.013145161326854313, equal variance: False, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, False, False]
+0 [np.float64(0.5), np.float64(0.9921766312868333), np.float64(0.7408665253134445), np.float64(0.994700575006248)]
+1 [True, False, True, False]
+1 [np.float64(0.007823368713166709), np.float64(0.5), np.float64(0.009865414162179488), np.float64(0.4873014415868169)]
+2 [False, False, False, False]
+2 [np.float64(0.25913347468655545), np.float64(0.9901345858378205), np.float64(0.5), np.float64(0.9939189015159724)]
+3 [True, False, True, False]
+3 [np.float64(0.005299424993752047), np.float64(0.5126985584131831), np.float64(0.006081098484027628), np.float64(0.5)]
+
+size: 1024.0, test: ANOVA, statistic: 7.913856285465027, p-value: 0.0011506021672602533, equal variance: False, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, False, False]
+0 [np.float64(0.5), np.float64(0.9997318894432287), np.float64(0.9967144518663137), np.float64(0.9994932259067573)]
+1 [True, False, True, False]
+1 [np.float64(0.0002681105567713185), np.float64(0.5), np.float64(0.03489910865694036), np.float64(0.14061086214097465)]
+2 [True, False, False, False]
+2 [np.float64(0.0032855481336863343), np.float64(0.9651008913430597), np.float64(0.5), np.float64(0.8307555072647925)]
+3 [True, False, False, False]
+3 [np.float64(0.0005067740932426939), np.float64(0.8593891378590254), np.float64(0.16924449273520747), np.float64(0.5)]
+
+size: 1536.0, test: Kruskal-Wallis, statistic: 24.048292682926814, p-value: 2.4406722605912454e-05, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, False, False]
+0 [np.float64(0.5151319787899796), np.float64(0.9999325785388228), np.float64(0.9894330359354194), np.float64(0.9963577214952601)]
+1 [True, False, True, True]
+1 [np.float64(9.133589555477501e-05), np.float64(0.5151319787899796), np.float64(0.0005039881201883722), np.float64(0.0008531246844597982)]
+2 [True, False, False, False]
+2 [np.float64(0.012874040410554032), np.float64(0.9996157305434186), np.float64(0.5151319787899796), np.float64(0.9190137947599369)]
+3 [True, False, False, False]
+3 [np.float64(0.004554248199015482), np.float64(0.9993425276651434), np.float64(0.09293836618293788), np.float64(0.5151319787899796)]
+
+size: 2048.0, test: Kruskal-Wallis, statistic: 36.15951219512198, p-value: 6.928844992415364e-08, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, True, False]
+0 [np.float64(0.5151319787899796), np.float64(0.9999325785388228), np.float64(9.133589555477501e-05), np.float64(0.999835080739611)]
+1 [True, False, True, True]
+1 [np.float64(9.133589555477501e-05), np.float64(0.5151319787899796), np.float64(9.133589555477501e-05), np.float64(9.133589555477501e-05)]
+2 [False, False, False, False]
+2 [np.float64(0.9999325785388228), np.float64(0.9999325785388228), np.float64(0.5151319787899796), np.float64(0.9999325785388228)]
+3 [True, False, True, False]
+3 [np.float64(0.00021981937631328227), np.float64(0.9999325785388228), np.float64(9.133589555477501e-05), np.float64(0.5151319787899796)]
+
+size: 2671.0, test: ANOVA, statistic: 180.7657849715374, p-value: 9.34325530862261e-22, equal variance: True, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, False, False]
+0 [np.float64(0.5), np.float64(0.9999990772891726), np.float64(0.9999999998445667), np.float64(0.9999999999999999)]
+1 [True, False, False, False]
+1 [np.float64(9.227108274779439e-07), np.float64(0.5), np.float64(0.9999360137912944), np.float64(0.9999999999987264)]
+2 [True, True, False, False]
+2 [np.float64(1.554333675744152e-10), np.float64(6.398620870565426e-05), np.float64(0.5), np.float64(0.9999999986620336)]
+3 [True, True, True, False]
+3 [np.float64(1.0255408964989183e-16), np.float64(1.2737095416990371e-12), np.float64(1.3379663821182926e-09), np.float64(0.5)]
+
+size: 3072.0, test: Kruskal-Wallis, statistic: 35.26829268292684, p-value: 1.0691737953962606e-07, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, False, False]
+0 [np.float64(0.5151319787899796), np.float64(0.9999325785388228), np.float64(0.9999325785388228), np.float64(0.9999325785388228)]
+1 [True, False, True, False]
+1 [np.float64(9.133589555477501e-05), np.float64(0.5151319787899796), np.float64(9.133589555477501e-05), np.float64(0.9988988900287514)]
+2 [True, False, False, False]
+2 [np.float64(9.133589555477501e-05), np.float64(0.9999325785388228), np.float64(0.5151319787899796), np.float64(0.9999325785388228)]
+3 [True, True, True, False]
+3 [np.float64(9.133589555477501e-05), np.float64(0.0014136360455584039), np.float64(9.133589555477501e-05), np.float64(0.5151319787899796)]
+
+size: 3584.0, test: ANOVA, statistic: 4129.121488160979, p-value: 4.944387021515732e-28, equal variance: False, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, True, False, False]
+0 [np.float64(0.5), np.float64(1.4638973347966603e-08), np.float64(1.0), np.float64(1.0)]
+1 [False, False, False, False]
+1 [np.float64(0.9999999853610266), np.float64(0.5), np.float64(1.0), np.float64(1.0)]
+2 [True, True, False, False]
+2 [np.float64(2.2209785260000944e-23), np.float64(2.3931015915303623e-25), np.float64(0.5), np.float64(0.9115464239271145)]
+3 [True, True, False, False]
+3 [np.float64(1.0337614889204138e-23), np.float64(2.4169937543491785e-25), np.float64(0.08845357607288556), np.float64(0.5)]
+
+size: 4096.0, test: Kruskal-Wallis, statistic: 32.95024390243901, p-value: 3.2994504159259994e-07, reject null hypothesis: True
+0 = data_coalesced, 1 = data_not_coalesced, 2 = data_moton_coalesced, 3 = data_morton_not_coalesced
+0 [False, False, False, False]
+0 [np.float64(0.5151319787899796), np.float64(0.9999325785388228), np.float64(0.07023252407917747), np.float64(0.9999325785388228)]
+1 [True, False, True, False]
+1 [np.float64(9.133589555477501e-05), np.float64(0.5151319787899796), np.float64(9.133589555477501e-05), np.float64(0.9997801806236867)]
+2 [False, False, False, False]
+2 [np.float64(0.9393877484935417), np.float64(0.9999325785388228), np.float64(0.5151319787899796), np.float64(0.9999325785388228)]
+3 [True, True, True, False]
+3 [np.float64(9.133589555477501e-05), np.float64(0.00029141997158963715), np.float64(9.133589555477501e-05), np.float64(0.5151319787899796)]
