@@ -1,0 +1,15 @@
+{
+  "name": "2025-potts-simple",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.10",
+    "mersenne-twister": "^1.1.0"
+  }
+}
