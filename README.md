@@ -16,4 +16,4 @@ The results of the hypothesis tests may be difficult to comprehend, so I will ex
 
 ## 3 Data Analysis
 
-This folder contains the python files that were used to process the data. Each of these has been written by me.
+This folder contains the python files that were used to process the data. Each of these has been written by me. The 'windows' folder contains the files that were used to specifically process the Windows data (these are mostly the same but use a different encoding). The other python scripts were used for the Linux/MacOS data. 
