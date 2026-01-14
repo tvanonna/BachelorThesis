@@ -1,0 +1,30 @@
+Grid Size & Setting & Performance Improvement Over Baseline & Effect Size & P-value \\
+512x512 & Prefetching Enabled, Morton Disabled & -0.12(0.23--0.58)% & r = 0.08(-0.25-0.4) & p = 0.66 \\
+512x512 & Prefetching Enabled, Morton Enabled & -12.51(-11.94--13.09)% & r = 0.85(0.85-0.85) & p = 1.0 \\
+512x512 & Prefetching Disabled, Morton Enabled & -12.51(-11.82--13.09)% & r = 0.85(0.85-0.85) & p = 1.0 \\
+768x768 & Prefetching Enabled, Morton Disabled & -0.13(0.32--0.51)% & r = 0.12(-0.29-0.51) & p = 0.71 \\
+768x768 & Prefetching Enabled, Morton Enabled & -16.25(-15.81--16.76)% & r = 0.85(0.85-0.85) & p = 1.0 \\
+768x768 & Prefetching Disabled, Morton Enabled & -16.06(-15.49--16.57)% & r = 0.85(0.85-0.85) & p = 1.0 \\
+1024x1024 & Prefetching Enabled, Morton Disabled & 0.08(0.6--0.6)% & r = -0.14(-0.55-0.29) & p = 0.29 \\
+1024x1024 & Prefetching Enabled, Morton Enabled & -17.84(-17.36--18.53)% & r = 0.85(0.85-0.85) & p = 1.0 \\
+1024x1024 & Prefetching Disabled, Morton Enabled & -17.76(-17.2--18.41)% & r = 0.85(0.85-0.85) & p = 1.0 \\
+1536x1536 & Prefetching Enabled, Morton Disabled & -0.04(0.04--0.12)% & r = 0.17(-0.33-0.66) & p = 0.73 \\
+1536x1536 & Prefetching Enabled, Morton Enabled & -19.98(-19.95--20.06)% & r = 0.83(0.83-0.83) & p = 1.0 \\
+1536x1536 & Prefetching Disabled, Morton Enabled & -19.98(-19.95--20.06)% & r = 0.83(0.83-0.83) & p = 1.0 \\
+2048x2048 & Prefetching Enabled, Morton Disabled & 0.07(0.11-0.02)% & r = -0.3(-0.76-0.23) & p = 0.21 \\
+2048x2048 & Prefetching Enabled, Morton Enabled & -20.71(-20.67--20.76)% & r = 0.83(0.83-0.83) & p = 1.0 \\
+2048x2048 & Prefetching Disabled, Morton Enabled & -20.69(-20.67--20.73)% & r = 0.83(0.83-0.83) & p = 1.0 \\
+2671x2671 & Prefetching Enabled, Morton Disabled & -0.02(0.07--0.14)% & r = 0.09(-0.71-0.8) & p = 0.65 \\
+2671x2671 & Prefetching Enabled, Morton Enabled & -21.38(-20.96--22.14)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+2671x2671 & Prefetching Disabled, Morton Enabled & -21.05(-21.03--21.1)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+3072x3072 & Prefetching Enabled, Morton Disabled & -0.4(0.05--1.31)% & r = -0.09(-0.8-0.8) & p = 0.5 \\
+3072x3072 & Prefetching Enabled, Morton Enabled & -21.39(-21.29--21.45)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+3072x3072 & Prefetching Disabled, Morton Enabled & -21.32(-21.29--21.39)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+3584x3584 & Prefetching Enabled, Morton Disabled & 0.1(0.17-0.05)% & r = -0.71(-0.8--0.45) & p = 0.1 \\
+3584x3584 & Prefetching Enabled, Morton Enabled & -21.51(-21.38--21.73)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+3584x3584 & Prefetching Disabled, Morton Enabled & -21.4(-21.38--21.45)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+4096x4096 & Prefetching Enabled, Morton Disabled & 0.02(0.02-0.02)% & r = -0.27(-0.8-0.8) & p = 0.35 \\
+4096x4096 & Prefetching Enabled, Morton Enabled & -21.45(-21.43--21.46)% & r = 0.8(0.8-0.8) & p = 1.0 \\
+4096x4096 & Prefetching Disabled, Morton Enabled & -21.49(-21.43--21.58)% & r = 0.8(0.8-0.8) & p = 1.0 
+
+
