@@ -10,9 +10,7 @@ The included Artistoo files are the edited versions of the Ising model and cell 
 
 ## 2 Data
 
-The 'data' folder contains all the raw data that was processed for the purposes of this thesis. All of this data was gathered by me, except for the MacOS benchmarking data (which was done by Johannes Textor).
-
-[//] : # "The results of the hypothesis tests may be difficult to comprehend, so I will explain them here. Each setting is given a number from 0-3 (which is which is explained in the file itself). Afterwards (if the null hypothesis can be rejected that all settings have the same execution time) a 2D array is shown. The first number printed shows for which setting the pariwise-tests are performed (i.e. the setting for which we want to determine whether it has a smaller execution time than the other settings). The results [i][j] show whether the execution times of setting i are significantly smaller than that of setting j. The first row shows whether we can reject the null hypothesis of no difference between settings i and j, where as the second line shows the computed p-values. For more information on how this number was calculated, please refer to 'data_analysis/benchdata_t_test.py'."
+The 'data' folder contains all the raw data that was processed for the purposes of this thesis. All of this data was gathered by me, except for the MacOS benchmarking data (which was done by Johannes Textor). The p-values, speed-ups and effect sizes which were computed for the benchmarking experiment are output by the Python script as latex text, so the data looks exactly like it does in the Bachelor Thesis PDF.
 
 ## 3 Data Analysis
 

@@ -50,8 +50,8 @@ with os.scandir('.') as files:
                 new_lines = []
 
                 for line in lines:
-                    hrs, min, sec = map(float, line.split(':'))
-                    time = sec + 60 * min + 3600 * hrs 
+                    hrs, minu, sec = map(float, line.split(':'))
+                    time = sec + 60 * minu + 3600 * hrs 
 
                     line = float(time) #for now we are only interested in the first entry of each row (i.e. the total exec time)
                     new_lines.append(line)
@@ -76,8 +76,8 @@ with os.scandir('.') as files:
                 new_lines = []
 
                 for line in lines:
-                    hrs, min, sec = map(float, line.split(':'))
-                    time = sec + 60 * min + 3600 * hrs 
+                    hrs, minu, sec = map(float, line.split(':'))
+                    time = sec + 60 * minu + 3600 * hrs 
 
                     line = float(time) #for now we are only interested in the first entry of each row (i.e. the total exec time)
                     new_lines.append(line)
@@ -102,8 +102,8 @@ with os.scandir('.') as files:
                 new_lines = []
 
                 for line in lines:
-                    hrs, min, sec = map(float, line.split(':'))
-                    time = sec + 60 * min + 3600 * hrs 
+                    hrs, minu, sec = map(float, line.split(':'))
+                    time = sec + 60 * minu + 3600 * hrs 
 
                     line = float(time) #for now we are only interested in the first entry of each row (i.e. the total exec time)
                     new_lines.append(line)
@@ -128,8 +128,8 @@ with os.scandir('.') as files:
                 new_lines = []
 
                 for line in lines:
-                    hrs, min, sec = map(float, line.split(':'))
-                    time = sec + 60 * min + 3600 * hrs 
+                    hrs, minu, sec = map(float, line.split(':'))
+                    time = sec + 60 * minu + 3600 * hrs 
 
                     line = float(time) #for now we are only interested in the first entry of each row (i.e. the total exec time)
                     new_lines.append(line)
@@ -155,10 +155,10 @@ def get_ci(b_data):
     res = stats.bootstrap([b_data], statistic=np.mean,  n_resamples=10000, confidence_level=0.95, alternative='two-sided', method='BCa', axis=0)
 
     ci = res.confidence_interval
-    return (ci[0], ci[1])
+    return (ci.low, ci.high)
 
 def get_u(b_data, baseline):
-    u, p = stats.mannwhitneyu(b_data, baseline, alternative='less', method='exact')
+    u, p = stats.mannwhitneyu(b_data, baseline, alternative='two-sided', method='exact')
     return u
 
 def get_r(u, n_1, n_2):
@@ -186,8 +186,8 @@ def get_effect_size(b_data, baseline):
     ns = len(b_data) #both samples have the same size so this is fine
 
     z_val = get_r(u_val, ns, ns) #these are r values, not z values
-    z_ci_low = get_r(ci[0], ns, ns)
-    z_ci_high = get_r(ci[1], ns, ns)
+    z_ci_low = get_r(ci.low, ns, ns)
+    z_ci_high = get_r(ci.high, ns, ns)
 
     return(z_val, z_ci_low, z_ci_high, p_val) #contains the effect size, and effect size of CI percentiles
 
@@ -215,21 +215,24 @@ def compute_all(grid_size, b_data, baseline, setting):
     ez = get_effect_size(b_data, baseline)
     impr = compute_baseline_improvement(b_data, ci, baseline)
 
-    print(f"{width}x{width} & {setting} & {round(impr[0],2)}({round(impr[1],2)}-{round(impr[2],2)})% & r = {round(ez[0],2)}({round(ez[1],2)}-{round(ez[2],2)}) & p = {round(ez[3],2)}")
+    print(f"${width}^2$ & {setting} & {round(impr[0],2)}({round(min(impr[1], impr[2]),2)}-{round(max(impr[2],impr[1]),2)})\\% & {round(ez[0],2)}({round(ez[1],2)}-{round(ez[2],2)}) & {round(ez[3],2)} \\\\")
     
-
-print("Grid Size & Setting & Performance Improvement Over Baseline & Effect Size & P-value")
+print("\\begin{tabular}{c|c|c|c|c}")
+print("Grid Size & Setting & Speed-Up & r & p-Value \\\\")
+print("\\hline")
 
 for i in range(len(Y)):
-    compute_all(Y[i], coal_X[i], ncoal_X[i], "Prefetching Enabled, Morton Disabled") #ncoal is always the baseline (since both features are disabled here)
-    compute_all(Y[i], coal_morton_X[i], ncoal_X[i], "Prefetching Enabled, Morton Enabled")
-    compute_all(Y[i], ncoal_morton_X[i], ncoal_X[i], "Prefetching Disabled, Morton Enabled")
+    compute_all(Y[i], coal_X[i], ncoal_X[i], "Prefetching") #ncoal is always the baseline (since both features are disabled here)
 
-    print('\n')
+print("\\hline")
+
+for i in range(len(Y)):
+    compute_all(Y[i], ncoal_morton_X[i], ncoal_X[i], "Morton")
+
+print("\\hline")
+
+for i in range(len(Y)):
+    compute_all(Y[i], coal_morton_X[i], ncoal_X[i], "Both")
     
-
-
-
-
-
+print("\\end{tabular}")
             
